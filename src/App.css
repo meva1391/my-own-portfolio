@@ -3,13 +3,19 @@
 :root{
   --primary-white: #fff;
   --primary-dark: rgba(255,255,255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 body {
-  font-family: "Roboto Codesend" sans-serif;
+  font-family: "Roboto Codesend", sans-serif;
 }
 
 /************* NAVBAR *************/
+nav{
+  z-index: 2;
+}
+
 .logo{
   width: 6.25rem;
 }
@@ -41,4 +47,79 @@ nav ul li {
 .navbar-nav > li > a.active:focus,
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-white);
+}
+
+/************* HEADER *************/
+.header-wraper {
+  position: relative;
+  background: url(laptop.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Codesend", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+/*-------- TYPED TEXT --------*/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+/*-------- HEADER MAIN OFFER BUTTON --------*/
+.btn-main-offer {
+  border: 0.063rem solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none;
+}
+
+.btn-main-offer:hover {
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+/*-------- PARTICLES --------*/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  } 
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+  .logo {
+    width: 5rem;
+  }
 }
