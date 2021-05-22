@@ -3,6 +3,7 @@
 :root{
   --primary-white: #fff;
   --primary-dark: rgba(255,255,255, 0);
+  --primary-orange: #f9ab00;
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
 }
@@ -74,7 +75,7 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: var(--primary-white);
+  color: var(--primary-orange);
   text-transform: uppercase;
 }
 
