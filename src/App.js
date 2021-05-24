@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';
 import Services from './components/Services';
+import Experiences from './components/Experinces';
 import './App.css';
 import Particles from 'react-particles-js';
 
@@ -34,6 +35,7 @@ function App() {
       <Header />
       <About />
       <Services />
+      <Experiences />
     </>
   );
 }
