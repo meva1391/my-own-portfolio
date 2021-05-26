@@ -9,6 +9,7 @@
   --primary-light-grey: #f4f4f4;
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666666;
+  --primary-black: #000000;
 }
 
 body {
@@ -167,6 +168,7 @@ nav ul li {
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background: var(--primary-white);
+  transition: 0.3s ease-in-out;
 }
 
 .services .box:hover {
@@ -249,6 +251,79 @@ nav ul li {
   font-weight: 900;
 }
 
+/************* PORTFOLIO *************/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0.5rem;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+.portfolio-image-box {
+  width: auto;
+  position: relative;
+  margin: 1rem;
+}
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 12.5rem;
+  height: 12.5rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -7rem;
+  margin-top: 5.6rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 80%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-image-popupbox {
+  height: 25rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  color: var(--primary-red);
+}
+
+.popupbox-content {
+  text-align: center;
+}
+
 @media(max-width: 768px) {
   .particles-canvas {
     display: none;
@@ -264,5 +339,45 @@ nav ul li {
   }
   .profile-img {
     width: 10rem;
+  }
+  .timeline-block-right {
+    float: unset;
+  }
+  .timeline-block-left {
+    float: unset;
+    direction: ltr;
+  }
+  .timeline-block {
+    width: 100%;
+  }
+  .experience-wrapper::before {
+    width: 0px;
+  }
+}
+
+@media(max-width: 968px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+    height: 15rem;
+  }
+}
+
+@media(max-height: 570px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+  .portfolio-image-popupbox {
+    width: 100%;
+    height: 65%;
+  }
+}
+
+@media(max-height: 300px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+  .portfolio-image-popupbox {
+    width: auto;
+    height: 50%;
   }
 }
