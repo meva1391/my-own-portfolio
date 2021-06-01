@@ -30,7 +30,7 @@ export default function ContactMe() {
           }).catch(err => console.error(`Somthing went wrong ${err}`));
       }
     return (
-        <div className="contacts">
+        <div className="contacts" id="contacts">
             <div className="text-center">
                 <h1>contact me</h1>
                 <p>Please fill out the form and describe your project needs and I'll contact you as soon as possible.</p>

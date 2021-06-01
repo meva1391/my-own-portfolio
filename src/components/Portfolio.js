@@ -133,7 +133,7 @@ const Portfolio = () => {
         fadeInSpeed: 500
     } 
     return (
-        <div className="portfolio-wrapper">
+        <div className="portfolio-wrapper" id="portfolio">
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">
                     portfolio

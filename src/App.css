@@ -41,7 +41,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  border-top: 0.1875rem solid transparent;
 }
 
 .navbar-brand {
@@ -51,7 +51,7 @@ nav ul li {
 }
 
 .navbar-nav > li > a.active, 
-.navbar-nav > li > a.active:focus,
+.navbar-nav > li > a:focus,
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
 }
@@ -62,7 +62,7 @@ nav ul li {
   background: url(laptop.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -326,6 +326,10 @@ nav ul li {
   text-align: center;
 }
 
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
+
 /************* TESTIMONIALS *************/
 .testimonials {
   background-image: url(./testimonials-bg.jpg);
@@ -475,6 +479,28 @@ textarea.form-control {
 .success-message {
   font-weight: 900;
   color: var(--primary-green);
+}
+
+/************* FOOTER *************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+  cursor: pointer;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+}
+
+.footer p {
+  margin-bottom: 0;
 }
 
 @media(max-width: 768px) {

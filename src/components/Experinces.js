@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Experinces() {
     return (
-        <div className="experinces">
+        <div className="experinces" id="experiences">
             <div className="d-flex justify-content-center my-5">
                 <h1>experiences</h1>
             </div>

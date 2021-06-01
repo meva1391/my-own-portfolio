@@ -7,6 +7,7 @@ import Experiences from './components/Experinces';
 import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
 import ContactMe from './components/ContactMe';
+import Footer from './components/Footer';
 import './App.css';
 import Particles from 'react-particles-js';
 
@@ -42,6 +43,7 @@ function App() {
       <Portfolio />
       <Testimonials />
       <ContactMe />
+      <Footer />
     </>
   );
 }
