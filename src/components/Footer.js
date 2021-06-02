@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-scroll';
 import {
     WhatsappShareButton,
     WhatsappIcon, 
@@ -17,7 +18,7 @@ export default function Footer() {
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="d-flex">
-                            <p>city Moscow Main st 2020 office #223</p>
+                            <p>city Tehran Sabonchi st Ayazi alley Douran office #62</p>
                         </div>
                         <div className="d-flex">
                             <a href="tel:555-555-555">+989374806759</a>
@@ -29,18 +30,18 @@ export default function Footer() {
                     <div className="col-lg-3 col-md-2 col-sm-6">
                         <div className="row">
                             <div className="col">
-                                <a className="footer-nav">Home</a>
+                                <Link smooth={true} to="home" className="footer-nav">Home</Link>
                                 <br />
-                                <a className="footer-nav">About me</a>
+                                <Link smooth={true} to="about" offset={-110} className="footer-nav">About me</Link>
                                 <br />
-                                <a className="footer-nav">Services</a>
+                                <Link smooth={true} to="service" offset={-110} className="footer-nav">Services</Link>
                             </div>
                             <div className="col">
-                                <a className="footer-nav">Experiences</a>
+                                <Link smooth={true} to="experiences" offset={-110} className="footer-nav">Experiences</Link>
                                 <br />
-                                <a className="footer-nav">Portfolio</a>
+                                <Link smooth={true} to="portfolio" offset={-110} className="footer-nav">Portfolio</Link>
                                 <br />
-                                <a className="footer-nav">Contacts</a>
+                                <Link smooth={true} to="contacts" offset={-110} className="footer-nav">Contacts</Link>
                             </div>
                         </div>
                     </div>
